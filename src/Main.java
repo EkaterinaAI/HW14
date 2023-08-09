@@ -1,3 +1,5 @@
+package HW14.src;
+
 import java.util.Scanner;
 
 public class Main {
@@ -8,7 +10,13 @@ public class Main {
     }
 
     public static double avg(int num) {
-        //todo Дописать логику работы метода сюда. Метод main не трогаем!!!
-        return 0; //todo заменить 0 на корректный результат.
+        double result = 0.0;
+        String numS = String.valueOf(num);
+
+        for (int i = 0; i < numS.length(); i++) {
+            result += Integer.parseInt(String.valueOf(numS.charAt(i)));
+        }
+
+        return (result / numS.length()); //todo заменить 0 на корректный результат.
     }
 }
